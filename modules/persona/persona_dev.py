@@ -1,6 +1,7 @@
 import os
 import random
 from PIL import Image
+import time
 
 # Define the folder names in the order in which you want to layer the images
 folder_names = ['base', 'pants', 'shoes', 'shirt', 'hair']
@@ -34,3 +35,8 @@ for i in range(number_of_images):
     # Save the merged image
     save_name = f"{base_name}_{i}.png"
     base_image.save(save_name)
+    print(f"Generated {save_name}")
+    time.sleep(0.1)  # To simulate the processing time
+
+while True:
+    pass

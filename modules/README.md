@@ -1,4 +1,66 @@
-# Lectern Documentation
+# MC Dev Tools
+**Simple scripts to assist with Minecraft Addon development.**
+
+*These scripts are designed for Bedrock edition but may provide use in other cases.*
+
+## Hueshifter
+- Generates copies of textures with incremented hues.
+
+---
+## Actionbar
+A script that generates complex actionbar title commands in Minecraft by taking user input. The script takes the id, scoreboard, and selector as inputs, converts the information into JSON format, and saves it as a file.
+
+**Usage**
+- Run the script in the terminal/command line
+- Enter the id, board, and selector for the actionbar title
+- The script will generate and save a JSON file with the actionbar title information
+  
+**Limitations**
+- The number of characters in the id and selector is not specified.
+
+---
+
+## Book Gen
+
+A script to generate a book in Minecraft by taking user input for the book's title, author name, and text. The script converts the text into pages and saves it as a JSON file.
+
+**Usage**
+- Run the script in the terminal/command line
+- Enter the book title, author name, and text
+- The script will generate a JSON file with the book's information
+
+**Limitations**
+- Book text must be less than 12800 characters
+- Each page can have up to 256 characters
+
+---
+
+## Item Gen
+A script that generates Minecraft item files by taking the id and item names from the user as input. The script creates language (.lang) files and JSON files for the items.
+
+**Usage**
+- Run the script in the terminal/command line
+- Enter the id of the items (e.g. loadisk)
+- Enter the item names separated by a space (e.g. apple orange banana)
+- The script will generate the necessary files for the items
+- Repeat the process if you want to generate files for more items
+
+**Limitations**
+- The script will only generate the files if they don't already exist.
+
+---  
+
+# Persona 
+The script generates Minecraft skins by combining random parts from defined folders. The user inputs the number of skins to generate and the base name, and the script saves the final result as PNG files. 
+
+**Usage**
+- Run the script in the terminal/command line
+- Enter the number of images you want to generate.
+- Enter the name of the files you want to generate.
+  
+---
+
+# Looper
 
 This program is designed to generate Minecraft commands and write them to a file. The commands are based on a user-provided input string, which can contain variable definitions, looping, and other special syntax.
 
